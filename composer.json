@@ -4,14 +4,15 @@
 	"license" : "MIT",
 	"description" : "installer for core libs for ultra code  folders",
 	"autoload" : {
-		"psr-0" : {
-			"ultra\\Composer" : "src/"
+		"psr-4" : {
+			"ultra\\Composer\\" : "src/"
 		}
 	},
 	"extra" : {
 		"class" : "ultra\\Composer\\UltraPlugin"
 	},
 	"require" : {
-		"composer-plugin-api": "^1.0"
+		"composer-plugin-api" : "^1.0",
+		"composer/composer": "*"
 	}
 }
