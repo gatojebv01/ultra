@@ -27,8 +27,8 @@ class UltraCoreInstaller extends LibraryInstaller
     /**
      * {@inheritDoc}
      */
-    public function supports($packageType)
-    {
-        return 'loadfusion' === $packageType;
-    }
+//     public function supports($packageType)
+//     {
+//         return 'loadfusion' === $packageType;
+//     }
 }
