@@ -12,8 +12,8 @@ class UltraCoreInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $prefix = substr($package->getPrettyName(), 0, 13);
-        if ('ultra/custom-' !== $prefix) {
+        $prefix = substr($package->getPrettyName(), 0, 6);
+        if ('ultra-' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install ultra core '
                 .'should always start their package name with '
@@ -27,8 +27,8 @@ class UltraCoreInstaller extends LibraryInstaller
     /**
      * {@inheritDoc}
      */
-//     public function supports($packageType)
-//     {
-//         return 'loadfusion' === $packageType;
-//     }
+     public function supports($packageType)
+     {
+         return 'ultra-core' === $packageType;
+    }
 }
