@@ -12,16 +12,16 @@ class UltraCoreInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $prefix = substr($package->getPrettyName(), 0, 5);
-        if ('ultra-' !== $prefix) {
+        $prefix = substr($package->getPrettyName(), 0, 13);
+        if ('ultra/custom-' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install ultra core '
                 .'should always start their package name with '
-                .'"ultra-"'
+                .'"ultra/custom-"'
             );
         }
 
-        return 'ultra/'.substr($package->getPrettyName(), 11);
+        return 'CoreFramwork/'.substr($package->getPrettyName(), 11);
     }
 
     /**
