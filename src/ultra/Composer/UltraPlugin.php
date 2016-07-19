@@ -13,4 +13,8 @@ class UltraPlugin implements PluginInterface
         $installer = new UltraCoreInstaller($io, $composer);
         $composer->getInstallationManager()->addInstaller($installer);
     }
+//     public function activate(Composer $composer, IOInterface $io)
+//     {
+//     	print "hello world";
+//     }
 }
