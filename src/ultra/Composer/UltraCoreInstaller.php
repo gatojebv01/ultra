@@ -12,8 +12,8 @@ class UltraCoreInstaller extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        $prefix = substr($package->getPrettyName(), 0, 6);
-        if ('ultra-' !== $prefix) {
+        $prefix = substr($package->getPrettyName(), 0, 10);
+        if ('ultra/core' !== $prefix) {
             throw new \InvalidArgumentException(
                 'Unable to install ultra core '
                 .'should always start their package name with '
@@ -21,7 +21,7 @@ class UltraCoreInstaller extends LibraryInstaller
             );
         }
 
-        return 'CoreFramwork/'.substr($package->getPrettyName(), 11);
+        return 'CoreFramwork/'.substr($package->getPrettyName(), 3);
     }
 
     /**
