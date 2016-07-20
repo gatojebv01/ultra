@@ -21,7 +21,7 @@ class UltraCoreInstaller extends LibraryInstaller
             );
         }
 
-        return 'CoreFramwork";
+        return 'CoreFramwork';
     }
 
     /**
