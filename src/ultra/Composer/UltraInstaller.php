@@ -1,5 +1,6 @@
 <?php
-namespace Composer\Installers;
+//namespace Composer\Installers;
+namespace ultra\Composer;
 
 class UltraInstaller extends BaseInstaller
 {
