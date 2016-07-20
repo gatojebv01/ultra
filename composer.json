@@ -1,18 +1,29 @@
 {
-	"name" : "ultra/plugin",
-	"type" : "composer-plugin",
-	"license" : "MIT",
-	"description" : "installer for core libs for ultra code  folders",
-	"autoload" : {
-		"psr-0" : {
-			"ultra\\Composer\\" : "src"
+	"keywords" : [
+		"zeus",
+		"core",
+		"ultra"
+	],
+	"repositories" : [		
+        {
+			"type" : "vcs",
+			"url" : "https://github.com/gatojebv01/ultra"
+		}
+	],
+    
+	"config" : {
+		"github-oauth" : {
+			"github.com" : "2184d78ece013908709c9438124498d9fe0805c6"
 		}
 	},
-	"extra" : {
-		"class" : "ultra\\Composer\\Plugin"
-	},
+	"name" : "ultra/core-Zeus",
+	"version" : "1.0.0",
+	"license" : "MIT",
+	"type" : "ultra-core",
+	"description" : "Zeus core project",
 	"require" : {
-		"composer-plugin-api" : "^1.0",
-		"composer/composer" : "*"
-	}
+		"ultra/plugin" : "*"
+	},
+	"minimum-stability" : "dev",
+	"prefer-stable" : true
 }
