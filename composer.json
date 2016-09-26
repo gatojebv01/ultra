@@ -2,6 +2,7 @@
 	"name" : "ultra/plugin",
 	"type" : "composer-plugin",
 	"license" : "MIT",
+	"version: ": "1.0.0",
 	"description" : "installer for core libs for ultra code  folders",
 	"autoload" : {
 		"psr-0" : {
@@ -15,4 +16,6 @@
 		"composer-plugin-api" : "^1.0",
 		"composer/composer" : "*"
 	}
+	
+	
 }
