@@ -21,7 +21,7 @@ class UltraCoreInstaller extends LibraryInstaller
             );
         }
 
-        return 'CoreFramework/'. substr($package->getPrettyName(), 11);
+        return 'core/'. substr($package->getPrettyName(), 11);
     }
 
     /**
